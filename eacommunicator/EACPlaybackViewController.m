@@ -737,19 +737,19 @@ NSInteger sortTracks(id track1, id track2, void *context)
 
 -(void) showDefaultTrackInfo
 {
-	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	
-	NSArray* playbackInfo = [defaults arrayForKey:kPLAYBACK_USER_DEFAULTS];
-	
-	for (NSDictionary*track in playbackInfo)
-	{
+//	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//	
+//	NSArray* playbackInfo = [defaults arrayForKey:kPLAYBACK_USER_DEFAULTS];
+//	
+//	for (NSDictionary*track in playbackInfo)
+//	{
 		//check the track data
 		//		NSLog(@"adventure ID: %@", track[kADVENTURE_ID]);
 		//		NSLog(@"adventure number: %@", track[kADVENTURE_NUMBER]);
 		//		NSLog(@"already played: %@", track[kALREADY_PLAYED]);
 		//		NSLog(@"is prep adventure: %@", track[kIS_PREP_ADVENTURE]);
 		
-	}
+//	}
 }
 
 -(void)applyElapsedTime
