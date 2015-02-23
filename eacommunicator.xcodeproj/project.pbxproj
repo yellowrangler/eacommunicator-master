@@ -208,6 +208,10 @@
 		2CE4E3F3181509BD009F2499 /* ea_duotr6_LO4_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CE4E3B6181509BD009F2499 /* ea_duotr6_LO4_01.mp3 */; };
 		2CE4E3F4181509BD009F2499 /* ea_duotr7_LO5_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CE4E3B7181509BD009F2499 /* ea_duotr7_LO5_01.mp3 */; };
 		2CE4E3F5181509BD009F2499 /* ea_duotr8_LO6_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CE4E3B8181509BD009F2499 /* ea_duotr8_LO6_01.mp3 */; };
+		584F5AE31A9BA31800B59FC3 /* ea_duotr8_AP5_01_rev2014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 584F5AE21A9BA31800B59FC3 /* ea_duotr8_AP5_01_rev2014.mp3 */; };
+		584F5AE51A9BA7D700B59FC3 /* ea_duotr5_BB2_01_rev2014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 584F5AE41A9BA7D700B59FC3 /* ea_duotr5_BB2_01_rev2014.mp3 */; };
+		584F5AE81A9BAAB400B59FC3 /* ea_duotr3_EQ1_01_rev2014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 584F5AE61A9BAAB400B59FC3 /* ea_duotr3_EQ1_01_rev2014.mp3 */; };
+		584F5AE91A9BAAB400B59FC3 /* ea_duotr9_EQ7_01_rev2014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 584F5AE71A9BAAB400B59FC3 /* ea_duotr9_EQ7_01_rev2014.mp3 */; };
 		5897E7391A8EAC1A00C91EF7 /* libzbar-sim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5897E7321A8EAC1A00C91EF7 /* libzbar-sim.a */; };
 		5897E73A1A8EAC1A00C91EF7 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5897E7331A8EAC1A00C91EF7 /* libzbar.a */; };
 		5897E73B1A8EAC1A00C91EF7 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 5897E7351A8EAC1A00C91EF7 /* zbar-back.png */; };
@@ -428,6 +432,10 @@
 		2CE4E3B6181509BD009F2499 /* ea_duotr6_LO4_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr6_LO4_01.mp3; sourceTree = "<group>"; };
 		2CE4E3B7181509BD009F2499 /* ea_duotr7_LO5_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr7_LO5_01.mp3; sourceTree = "<group>"; };
 		2CE4E3B8181509BD009F2499 /* ea_duotr8_LO6_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr8_LO6_01.mp3; sourceTree = "<group>"; };
+		584F5AE21A9BA31800B59FC3 /* ea_duotr8_AP5_01_rev2014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr8_AP5_01_rev2014.mp3; sourceTree = "<group>"; };
+		584F5AE41A9BA7D700B59FC3 /* ea_duotr5_BB2_01_rev2014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr5_BB2_01_rev2014.mp3; sourceTree = "<group>"; };
+		584F5AE61A9BAAB400B59FC3 /* ea_duotr3_EQ1_01_rev2014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ea_duotr3_EQ1_01_rev2014.mp3; path = "../3. Packages/ea_duotr3_EQ1_01_rev2014.mp3"; sourceTree = "<group>"; };
+		584F5AE71A9BAAB400B59FC3 /* ea_duotr9_EQ7_01_rev2014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ea_duotr9_EQ7_01_rev2014.mp3; path = "../3. Packages/ea_duotr9_EQ7_01_rev2014.mp3"; sourceTree = "<group>"; };
 		5897E71E1A8EAC1A00C91EF7 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
 		5897E71F1A8EAC1A00C91EF7 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
 		5897E7201A8EAC1A00C91EF7 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
@@ -741,6 +749,7 @@
 				2CE4E37E181509BC009F2499 /* ea_duotr3_BB1_01.mp3 */,
 				2CE4E37F181509BC009F2499 /* ea_duotr4_BB1a_01.mp3 */,
 				2CE4E380181509BC009F2499 /* ea_duotr5_BB2_01.mp3 */,
+				584F5AE41A9BA7D700B59FC3 /* ea_duotr5_BB2_01_rev2014.mp3 */,
 				2CE4E381181509BC009F2499 /* ea_duotr6_BB3_01.mp3 */,
 				2CE4E382181509BC009F2499 /* ea_duotr7_BB4_01.mp3 */,
 				2CE4E383181509BC009F2499 /* ea_duotr8_BB5_01.mp3 */,
@@ -753,6 +762,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE4E385181509BC009F2499 /* ea_duotr1_PA1_01.mp3 */,
+				584F5AE21A9BA31800B59FC3 /* ea_duotr8_AP5_01_rev2014.mp3 */,
 				2CE4E386181509BC009F2499 /* ea_duotr2_PA2_01.mp3 */,
 				2CE4E387181509BD009F2499 /* ea_duotr3_AP1_01.mp3 */,
 				2CE4E388181509BD009F2499 /* ea_duotr4_AP2_01.mp3 */,
@@ -771,6 +781,7 @@
 				2CE4E38F181509BD009F2499 /* ea_duotr1_PA1_02.mp3 */,
 				2CE4E390181509BD009F2499 /* ea_duotr2_PA2_01.mp3 */,
 				2CE4E391181509BD009F2499 /* ea_duotr3_EQ1_01.mp3 */,
+				584F5AE61A9BAAB400B59FC3 /* ea_duotr3_EQ1_01_rev2014.mp3 */,
 				2CE4E392181509BD009F2499 /* ea_duotr4_EQ2_01.mp3 */,
 				2CE4E393181509BD009F2499 /* ea_duotr5_EQ3_01.mp3 */,
 				2CE4E394181509BD009F2499 /* ea_duotr6_EQ4_01.mp3 */,
@@ -778,6 +789,7 @@
 				2CE4E396181509BD009F2499 /* ea_duotr8_EQ6_01.mp3 */,
 				2CE4E397181509BD009F2499 /* ea_duotr8_EQ6_02.mp3 */,
 				2CE4E398181509BD009F2499 /* ea_duotr9_EQ7_01.mp3 */,
+				584F5AE71A9BAAB400B59FC3 /* ea_duotr9_EQ7_01_rev2014.mp3 */,
 			);
 			path = "4. Earthquakes";
 			sourceTree = "<group>";
@@ -1025,12 +1037,14 @@
 				2C754477174CF4F700B353D0 /* track01.png in Resources */,
 				2C754478174CF4F700B353D0 /* track02.png in Resources */,
 				2C75447A174CFAC700B353D0 /* icon01-57x57.png in Resources */,
+				584F5AE81A9BAAB400B59FC3 /* ea_duotr3_EQ1_01_rev2014.mp3 in Resources */,
 				2C75447C174CFACB00B353D0 /* icon01-114x114.png in Resources */,
 				2CE4E3C0181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
 				2C75448A174D006800B353D0 /* Default@2x.png in Resources */,
 				2CE4E3D2181509BD009F2499 /* ea_duotr3_EQ1_01.mp3 in Resources */,
 				147B400818525E0000C5980F /* ea_duotr7_LO5.mp3 in Resources */,
 				2C754490174D068F00B353D0 /* Default-568h@2x.png in Resources */,
+				584F5AE91A9BAAB400B59FC3 /* ea_duotr9_EQ7_01_rev2014.mp3 in Resources */,
 				2CE4E3BA181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
 				2CD7E0C8174D766E0062D951 /* Default.png in Resources */,
 				2CE4E3D6181509BD009F2499 /* ea_duotr7_EQ5_01.mp3 in Resources */,
@@ -1097,6 +1111,7 @@
 				2CA8A8C51756B40B0012718E /* prepadventure.png in Resources */,
 				2CA8A8C61756B40B0012718E /* small0.png in Resources */,
 				2CA8A8C71756B40B0012718E /* small1.png in Resources */,
+				584F5AE31A9BA31800B59FC3 /* ea_duotr8_AP5_01_rev2014.mp3 in Resources */,
 				2CA8A8C81756B40B0012718E /* small10.png in Resources */,
 				2CA8A8C91756B40B0012718E /* small11.png in Resources */,
 				2CA8A8CA1756B40B0012718E /* small12.png in Resources */,
@@ -1104,6 +1119,7 @@
 				2CE4E3CB181509BD009F2499 /* ea_duotr5_AP2a_01.mp3 in Resources */,
 				2CA8A8CC1756B40B0012718E /* small3.png in Resources */,
 				2CE4E3EB181509BD009F2499 /* ea_duotr09_RR6a_01.mp3 in Resources */,
+				584F5AE51A9BA7D700B59FC3 /* ea_duotr5_BB2_01_rev2014.mp3 in Resources */,
 				2CA8A8CD1756B40B0012718E /* small4.png in Resources */,
 				2CA8A8CE1756B40B0012718E /* small5.png in Resources */,
 				2CA8A8CF1756B40B0012718E /* small6.png in Resources */,
