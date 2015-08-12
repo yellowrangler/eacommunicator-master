@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>FD22C918-8579-4799-BDEE-CA2C05CD8F49</string>
 	<key>IDESourceControlProjectName</key>
-	<string>eacommunicator</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E6089869378DF33710DDA286A5D55756500FD980</key>
 		<string>https://github.com/yellowrangler/eacommunicator-master.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>eacommunicator.xcodeproj</string>
+	<string>eacommunicator.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E6089869378DF33710DDA286A5D55756500FD980</key>
