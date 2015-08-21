@@ -293,6 +293,11 @@
 		adventureNumberImageName = [NSString stringWithFormat:@"track%@A.png", self.currentAudioDictionary[EA_ADVENTURE_NUMBER]];
 		smallerAdventureNumberImageName = [NSString stringWithFormat:@"big%@.png", self.currentAudioDictionary[EA_ADVENTURE_NUMBER]];
 	}
+    else if ([self.currentAudioDictionary[EA_SUBADVENTURE] rangeOfString:@"b"].location != NSNotFound)
+    {//subadventure
+        adventureNumberImageName = [NSString stringWithFormat:@"track%@B.png", self.currentAudioDictionary[EA_ADVENTURE_NUMBER]];
+        smallerAdventureNumberImageName = [NSString stringWithFormat:@"big%@.png", self.currentAudioDictionary[EA_ADVENTURE_NUMBER]];
+    }
 	else
 	{//normal adventure
 		adventureNumberImageName = [NSString stringWithFormat:@"track%@.png", self.currentAudioDictionary[EA_ADVENTURE_NUMBER]];
