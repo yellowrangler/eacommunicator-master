@@ -203,7 +203,7 @@
 		[tempAudioMap setObject:audioFileDictionary	forKey:audioFileDictionary[EA_URL]];
 	}
 	
-	NSLog(@"%@", tempAudioMap);
+	NSLog(@"temp audio map: %@", tempAudioMap);
 	
 	self.audioMap = [tempAudioMap copy];
 }
@@ -307,6 +307,8 @@
 	UIImageView * adventureNumberImageView = [[UIImageView alloc] initWithImage:adventureNumberImage];
 	UIImageView * smallerAdventureNumberImageView = [[UIImageView alloc] initWithImage:smallerAdventureNumberImage];
 	
+//    NSLog(@"image view: %@", adventureNumberImageName);
+    
 	//set the correct frame for the iamge.
 	adventureNumberImageView.frame = CGRectMake(0,
 																							0,
@@ -470,13 +472,164 @@ NSInteger sortTracks(id track1, id track2, void *context)
 -(void) applyPreviouslyPlayedTracks:(NSArray*)tracksHaveBeenPlayedInfo
 {
 		
-	NSArray *sortedArray;
-	sortedArray = [tracksHaveBeenPlayedInfo sortedArrayUsingFunction:sortTracks context:NULL];
-
-	tracksHaveBeenPlayedInfo = sortedArray;
-	
-	self.CurrentUnitTracks = sortedArray;
-	
+    NSArray *sortedArray;
+    sortedArray = [tracksHaveBeenPlayedInfo sortedArrayUsingFunction:sortTracks context:NULL];
+    
+    // tracksHaveBeenPlayedInfo = sortedArray;
+    
+    // self.CurrentUnitTracks = sortedArray;
+    
+    
+    // Hold Debugging info
+    // NSLog(@"checkCurrentUnitTracksArray %@", checkCurrentUnitTracksArray);
+    // NSLog(@"finalCurrentUnitTracksArray %@", finalCurrentUnitTracksArray);
+    // NSLog(@"Element: %@", trackObject[EA_UNIT]);
+    // NSLog(@"Element: %@", trackObject[EA_ADVENTURE_NUMBER]);
+    // NSLog(@"Element: %@", trackObject[EA_SUBADVENTURE]);
+    // NSLog(@"Element: %@", trackObject[EA_ALREADY_PLAYED]);
+    
+    // NSLog(@"Element: %@", holdAlreadyPlayed);
+    
+    //
+    // need to remove duplicate units to support multiple versions
+    //
+    NSMutableArray *checkCurrentUnitTracksArray = [sortedArray mutableCopy];
+    NSMutableArray *finalCurrentUnitTracksArray = [[NSMutableArray alloc] init];
+    
+    NSMutableDictionary *holdTrackObject = [[NSMutableDictionary alloc] init];
+    
+    NSInteger foundDuplicate = 0;
+    NSInteger wroteDuplicate = 0;
+    
+    for (id trackObject in checkCurrentUnitTracksArray)
+    {
+        //
+        // PA units are excempt from this check so just write them
+        //
+        if ([trackObject[EA_ADVENTURE_NUMBER] isEqualToString:@"PA"])
+        {
+            
+            [finalCurrentUnitTracksArray addObject: trackObject];
+            
+            continue;
+        }
+        
+        //
+        // if first entry after PA just fill hold track object
+        //
+        if ([holdTrackObject count] == 0)
+        {
+            [holdTrackObject setDictionary:trackObject];
+            
+            continue;
+        }
+        
+        //
+        // now we check for dups. if no dup add held track object to final array
+        //
+        if (([holdTrackObject[EA_ADVENTURE_NUMBER] isEqualToString:trackObject[EA_ADVENTURE_NUMBER]])
+            && ([holdTrackObject[EA_SUBADVENTURE] isEqualToString:trackObject[EA_SUBADVENTURE]])
+            && ([holdTrackObject[EA_UNIT] isEqualToString:trackObject[EA_UNIT]]) )
+        {
+            //
+            // we have a duplicate
+            //
+            foundDuplicate = 1;
+            
+            //
+            // we need to check if either have been been played,
+            // if yes write that entry to final array then mark that duplicate
+            //
+            if ([holdTrackObject[EA_ALREADY_PLAYED] boolValue] == YES)
+            {
+                NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
+                [tempTrackObject setDictionary:holdTrackObject];
+                
+                [finalCurrentUnitTracksArray addObject: tempTrackObject];
+                wroteDuplicate = 1;
+                
+                continue;
+            }
+            
+            if ([trackObject[EA_ALREADY_PLAYED] boolValue] == YES)
+            {
+                [finalCurrentUnitTracksArray addObject: trackObject];
+                wroteDuplicate = 1;
+                
+                continue;
+            }
+        }
+        else
+        {
+            if ( (foundDuplicate == 1) && (wroteDuplicate == 0) )
+            {
+                //
+                // If we are here then there was a dup but no one was played
+                // so we write the held entry, add current entry to hold track object
+                // and reset foundDuplicate flag
+                //
+                NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
+                [tempTrackObject setDictionary:holdTrackObject];
+                
+                [finalCurrentUnitTracksArray addObject: tempTrackObject];
+                
+                [holdTrackObject setDictionary:trackObject];
+                
+                foundDuplicate = 0;
+            }
+            else if (foundDuplicate == 0)
+            {
+                //
+                // No duplicate so write held object
+                //
+                NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
+                [tempTrackObject setDictionary:holdTrackObject];
+                
+                [finalCurrentUnitTracksArray addObject: tempTrackObject];
+                
+                [holdTrackObject setDictionary:trackObject];
+            }
+            else
+            {
+                //
+                // either way if there was a foundDuplicate ir not we reset the wroteDuplicate
+                // flag back to 0
+                //
+                wroteDuplicate = 0;
+            }
+        }
+    } // end of for
+    
+    //
+    // last man standing logic
+    //
+    if ( (foundDuplicate == 1) && (wroteDuplicate == 0) )
+    {
+        //
+        // If we are here then there was a dup but no one was played
+        // so we write the held entry, add current entry to hold track object
+        // and reset foundDuplicate flag
+        //
+        NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
+        [tempTrackObject setDictionary:holdTrackObject];
+        
+        [finalCurrentUnitTracksArray addObject: tempTrackObject];
+    }
+    else if (foundDuplicate == 0)
+    {
+        //
+        // No duplicate so write held object
+        //
+        NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
+        [tempTrackObject setDictionary:holdTrackObject];
+        
+        [finalCurrentUnitTracksArray addObject: tempTrackObject];
+    }
+    
+//    self.CurrentUnitTracks = sortedArray;
+    self.CurrentUnitTracks = [finalCurrentUnitTracksArray copy];
+    tracksHaveBeenPlayedInfo = [finalCurrentUnitTracksArray copy];
+    
 	NSMutableArray * trackPlayedValues = [[NSMutableArray alloc] init];
 	
 	for (NSDictionary* track in tracksHaveBeenPlayedInfo)
@@ -531,6 +684,21 @@ NSInteger sortTracks(id track1, id track2, void *context)
 			smallerSubAdventureImageViewA.center = CGPointMake(smallerSubAdventureImageViewA.center.x + 10, smallerSubAdventureImageViewA.center.y + 2);
 			[self.browserWindowImageView addSubview:smallerSubAdventureImageViewA];
 		}
+        
+        if ([tracksHaveBeenPlayedInfo[trackIndex][EA_SUBADVENTURE] rangeOfString:@"b"].location != NSNotFound)
+        {
+            trackNumber.center = CGPointMake(trackNumber.center.x - 5, trackNumber.center.y);
+            
+            trackNumber.image = [UIImage imageNamed:[NSString stringWithFormat:@"small%d.png", trackIndex+1 - 3 - numberOfSubTracks]];
+            numberOfSubTracks++;
+            
+            UIImageView * smallerSubAdventureImageViewA = [[UIImageView alloc] initWithFrame:trackNumber.frame];
+            smallerSubAdventureImageViewA.image = [UIImage imageNamed:@"bigB.png"];
+            smallerSubAdventureImageViewA.contentMode = UIViewContentModeScaleAspectFit;
+            smallerSubAdventureImageViewA.clipsToBounds = YES;
+            smallerSubAdventureImageViewA.center = CGPointMake(smallerSubAdventureImageViewA.center.x + 10, smallerSubAdventureImageViewA.center.y + 2);
+            [self.browserWindowImageView addSubview:smallerSubAdventureImageViewA];
+        }
 		
 		//set the content mode and other necessary properties
 		dot.contentMode = UIViewContentModeScaleAspectFit;
