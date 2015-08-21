@@ -475,21 +475,6 @@ NSInteger sortTracks(id track1, id track2, void *context)
     NSArray *sortedArray;
     sortedArray = [tracksHaveBeenPlayedInfo sortedArrayUsingFunction:sortTracks context:NULL];
     
-    // tracksHaveBeenPlayedInfo = sortedArray;
-    
-    // self.CurrentUnitTracks = sortedArray;
-    
-    
-    // Hold Debugging info
-    // NSLog(@"checkCurrentUnitTracksArray %@", checkCurrentUnitTracksArray);
-    // NSLog(@"finalCurrentUnitTracksArray %@", finalCurrentUnitTracksArray);
-    // NSLog(@"Element: %@", trackObject[EA_UNIT]);
-    // NSLog(@"Element: %@", trackObject[EA_ADVENTURE_NUMBER]);
-    // NSLog(@"Element: %@", trackObject[EA_SUBADVENTURE]);
-    // NSLog(@"Element: %@", trackObject[EA_ALREADY_PLAYED]);
-    
-    // NSLog(@"Element: %@", holdAlreadyPlayed);
-    
     //
     // need to remove duplicate units to support multiple versions
     //
@@ -542,8 +527,7 @@ NSInteger sortTracks(id track1, id track2, void *context)
             //
             if ([holdTrackObject[EA_ALREADY_PLAYED] boolValue] == YES)
             {
-                NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
-                [tempTrackObject setDictionary:holdTrackObject];
+                NSDictionary *tempTrackObject = [[NSDictionary alloc] initWithDictionary:holdTrackObject  copyItems: YES];
                 
                 [finalCurrentUnitTracksArray addObject: tempTrackObject];
                 wroteDuplicate = 1;
@@ -558,44 +542,54 @@ NSInteger sortTracks(id track1, id track2, void *context)
                 
                 continue;
             }
+            
+            //
+            // if we are here then not time to write but add recent trackObject to hold
+            // we are assuming older versions are earlier in sorted order. This might not
+            // even make a difference for display purposes
+            //
+            [holdTrackObject setDictionary:trackObject];
         }
         else
         {
-            if ( (foundDuplicate == 1) && (wroteDuplicate == 0) )
+            if (foundDuplicate == 1)
             {
-                //
-                // If we are here then there was a dup but no one was played
-                // so we write the held entry, add current entry to hold track object
-                // and reset foundDuplicate flag
-                //
-                NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
-                [tempTrackObject setDictionary:holdTrackObject];
+                if (wroteDuplicate == 0)
+                {
+                    //
+                    // If we are here then there was a dup but no one was played
+                    // so we write the held entry, add current entry to hold track object
+                    // and reset foundDuplicate flag
+                    //
+                    
+                    NSDictionary *tempTrackObject = [[NSDictionary alloc] initWithDictionary:holdTrackObject  copyItems: YES];
+                    
+                    
+                    [finalCurrentUnitTracksArray addObject: tempTrackObject];
+                    
+                    [holdTrackObject setDictionary:trackObject];
+                    
+                    foundDuplicate = 0;
+                }
+                else if (wroteDuplicate == 1)
+                {
+                    [holdTrackObject setDictionary:trackObject];
+                }
                 
-                [finalCurrentUnitTracksArray addObject: tempTrackObject];
-                
-                [holdTrackObject setDictionary:trackObject];
-                
+                wroteDuplicate = 0;
                 foundDuplicate = 0;
-            }
-            else if (foundDuplicate == 0)
-            {
-                //
-                // No duplicate so write held object
-                //
-                NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
-                [tempTrackObject setDictionary:holdTrackObject];
-                
-                [finalCurrentUnitTracksArray addObject: tempTrackObject];
-                
-                [holdTrackObject setDictionary:trackObject];
             }
             else
             {
                 //
-                // either way if there was a foundDuplicate ir not we reset the wroteDuplicate
-                // flag back to 0
+                // No duplicate so write held object
                 //
-                wroteDuplicate = 0;
+
+                NSDictionary *tempTrackObject = [[NSDictionary alloc] initWithDictionary:holdTrackObject  copyItems: YES];
+                
+                [finalCurrentUnitTracksArray addObject: tempTrackObject];
+                
+                [holdTrackObject setDictionary:trackObject];
             }
         }
     } // end of for
@@ -610,8 +604,8 @@ NSInteger sortTracks(id track1, id track2, void *context)
         // so we write the held entry, add current entry to hold track object
         // and reset foundDuplicate flag
         //
-        NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
-        [tempTrackObject setDictionary:holdTrackObject];
+        
+        NSDictionary *tempTrackObject = [[NSDictionary alloc] initWithDictionary:holdTrackObject  copyItems: YES];
         
         [finalCurrentUnitTracksArray addObject: tempTrackObject];
     }
@@ -620,15 +614,14 @@ NSInteger sortTracks(id track1, id track2, void *context)
         //
         // No duplicate so write held object
         //
-        NSMutableDictionary *tempTrackObject = [[NSMutableDictionary alloc] init];
-        [tempTrackObject setDictionary:holdTrackObject];
+
+        NSDictionary *tempTrackObject = [[NSDictionary alloc] initWithDictionary:holdTrackObject  copyItems: YES];
         
         [finalCurrentUnitTracksArray addObject: tempTrackObject];
     }
-    
-//    self.CurrentUnitTracks = sortedArray;
-    self.CurrentUnitTracks = [finalCurrentUnitTracksArray copy];
-    tracksHaveBeenPlayedInfo = [finalCurrentUnitTracksArray copy];
+        
+    self.CurrentUnitTracks = finalCurrentUnitTracksArray;
+    tracksHaveBeenPlayedInfo = finalCurrentUnitTracksArray;
     
 	NSMutableArray * trackPlayedValues = [[NSMutableArray alloc] init];
 	
