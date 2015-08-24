@@ -323,10 +323,20 @@
 																										 smallerAdventureNumberImageViewOrigin.y,
 																										 smallerAdventureNumberImage.size.width / 2,
 																										 smallerAdventureNumberImage.size.height / 2);
-	if ([self.currentAudioDictionary[EA_SUBADVENTURE] rangeOfString:@"a"].location != NSNotFound)
+	if ( ([self.currentAudioDictionary[EA_SUBADVENTURE] rangeOfString:@"a"].location != NSNotFound) ||
+         ([self.currentAudioDictionary[EA_SUBADVENTURE] rangeOfString:@"b"].location != NSNotFound) )
 	{
 		UIImageView * smallerAdventureImageViewA = [[UIImageView alloc] initWithFrame:smallerAdventureNumberImageView.frame];
-		smallerAdventureImageViewA.image = [UIImage imageNamed:@"bigA.png"];
+        if ([self.currentAudioDictionary[EA_SUBADVENTURE] rangeOfString:@"a"].location != NSNotFound)
+        {
+            smallerAdventureImageViewA.image = [UIImage imageNamed:@"bigA.png"];
+        }
+        else
+        {
+            smallerAdventureImageViewA.image = [UIImage imageNamed:@"bigB.png"];
+        }
+
+        
 		smallerAdventureImageViewA.frame = CGRectMake(smallerAdventureImageViewA.frame.origin.x,
 																									smallerAdventureImageViewA.frame.origin.y,
 																									smallerAdventureImageViewA.image.size.width / 3,
@@ -480,8 +490,12 @@ NSInteger sortTracks(id track1, id track2, void *context)
     NSArray *sortedArray;
     sortedArray = [tracksHaveBeenPlayedInfo sortedArrayUsingFunction:sortTracks context:NULL];
     
+    // Tarry Cutler 08/24/2015
     //
-    // need to remove duplicate units to support multiple versions
+    // need to remove duplicate units to support multiple versions.
+    // checkCurrentUnitTracksArray - use to review current track information
+    // finalCurrentUnitTracksArray - final array will hold only needed track info (no duplicates)
+    // holdTrackObject - hold track info object to compare with
     //
     NSMutableArray *checkCurrentUnitTracksArray = [sortedArray mutableCopy];
     NSMutableArray *finalCurrentUnitTracksArray = [[NSMutableArray alloc] init];
@@ -505,7 +519,7 @@ NSInteger sortTracks(id track1, id track2, void *context)
         }
         
         //
-        // if first entry after PA just fill hold track object
+        // if first entry (after PA) just fill hold track object
         //
         if ([holdTrackObject count] == 0)
         {
@@ -515,7 +529,17 @@ NSInteger sortTracks(id track1, id track2, void *context)
         }
         
         //
-        // now we check for dups. if no dup add held track object to final array
+        // now we check for dups.
+        // if no dup found check if a dup was found before. If there was a dup before was it written
+        //      if it was not written then write what we are holding to final and then add current track info to holding.
+        //      if it was written just add current track info to holding.
+        //      if fall thu to here then no dups write holding to final and add current loop to holding
+        // if find dup
+        //      set found dup flag
+        //      if hold track was played (means this is the version of journal) add to final and set wrote dup flag
+        //      if current track was played add to final and set wrote dup flag
+        //      if fall thru then add current track to hold
+        // At end check if found dup and did not write then add hold to final then check if noduplicate then write hold to final
         //
         if (([holdTrackObject[EA_ADVENTURE_NUMBER] isEqualToString:trackObject[EA_ADVENTURE_NUMBER]])
             && ([holdTrackObject[EA_SUBADVENTURE] isEqualToString:trackObject[EA_SUBADVENTURE]])
@@ -568,7 +592,6 @@ NSInteger sortTracks(id track1, id track2, void *context)
                     //
                     
                     NSDictionary *tempTrackObject = [[NSDictionary alloc] initWithDictionary:holdTrackObject  copyItems: YES];
-                    
                     
                     [finalCurrentUnitTracksArray addObject: tempTrackObject];
                     
@@ -668,7 +691,8 @@ NSInteger sortTracks(id track1, id track2, void *context)
 																	 trackNumber.image.size.height / 2);
 		trackNumber.center = CGPointMake(dot.frame.origin.x + 5, dot.frame.origin.y + 17);
 		
-		if ([tracksHaveBeenPlayedInfo[trackIndex][EA_SUBADVENTURE] rangeOfString:@"a"].location != NSNotFound)
+		if ( ([tracksHaveBeenPlayedInfo[trackIndex][EA_SUBADVENTURE] rangeOfString:@"a"].location != NSNotFound) ||
+             ([tracksHaveBeenPlayedInfo[trackIndex][EA_SUBADVENTURE] rangeOfString:@"b"].location != NSNotFound) )
 		{
 			trackNumber.center = CGPointMake(trackNumber.center.x - 5, trackNumber.center.y);
 			
@@ -676,27 +700,21 @@ NSInteger sortTracks(id track1, id track2, void *context)
 			numberOfSubTracks++;
 
 			UIImageView * smallerSubAdventureImageViewA = [[UIImageView alloc] initWithFrame:trackNumber.frame];
-			smallerSubAdventureImageViewA.image = [UIImage imageNamed:@"bigA.png"];
+            if ([tracksHaveBeenPlayedInfo[trackIndex][EA_SUBADVENTURE] rangeOfString:@"a"].location != NSNotFound)
+            {
+                smallerSubAdventureImageViewA.image = [UIImage imageNamed:@"bigA.png"];
+            }
+            else
+            {
+                smallerSubAdventureImageViewA.image = [UIImage imageNamed:@"bigB.png"];
+            }
+            
+
 			smallerSubAdventureImageViewA.contentMode = UIViewContentModeScaleAspectFit;
 			smallerSubAdventureImageViewA.clipsToBounds = YES;
 			smallerSubAdventureImageViewA.center = CGPointMake(smallerSubAdventureImageViewA.center.x + 10, smallerSubAdventureImageViewA.center.y + 2);
 			[self.browserWindowImageView addSubview:smallerSubAdventureImageViewA];
 		}
-        
-        if ([tracksHaveBeenPlayedInfo[trackIndex][EA_SUBADVENTURE] rangeOfString:@"b"].location != NSNotFound)
-        {
-            trackNumber.center = CGPointMake(trackNumber.center.x - 5, trackNumber.center.y);
-            
-            trackNumber.image = [UIImage imageNamed:[NSString stringWithFormat:@"small%d.png", trackIndex+1 - 3 - numberOfSubTracks]];
-            numberOfSubTracks++;
-            
-            UIImageView * smallerSubAdventureImageViewA = [[UIImageView alloc] initWithFrame:trackNumber.frame];
-            smallerSubAdventureImageViewA.image = [UIImage imageNamed:@"bigB.png"];
-            smallerSubAdventureImageViewA.contentMode = UIViewContentModeScaleAspectFit;
-            smallerSubAdventureImageViewA.clipsToBounds = YES;
-            smallerSubAdventureImageViewA.center = CGPointMake(smallerSubAdventureImageViewA.center.x + 10, smallerSubAdventureImageViewA.center.y + 2);
-            [self.browserWindowImageView addSubview:smallerSubAdventureImageViewA];
-        }
 		
 		//set the content mode and other necessary properties
 		dot.contentMode = UIViewContentModeScaleAspectFit;
