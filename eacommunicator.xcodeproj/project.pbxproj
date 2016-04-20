@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E847A191CC7CFB400C76EC1 /* ea-duotr1-AE-P1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A111CC7CFB400C76EC1 /* ea-duotr1-AE-P1.mp3 */; };
+		0E847A1A1CC7CFB400C76EC1 /* ea-duotr2-AE-P2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A121CC7CFB400C76EC1 /* ea-duotr2-AE-P2.mp3 */; };
+		0E847A1B1CC7CFB400C76EC1 /* ea-duotr3-AE-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A131CC7CFB400C76EC1 /* ea-duotr3-AE-1.mp3 */; };
+		0E847A1C1CC7CFB400C76EC1 /* ea-duotr4-AE-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A141CC7CFB400C76EC1 /* ea-duotr4-AE-2.mp3 */; };
+		0E847A1D1CC7CFB400C76EC1 /* ea-duotr5-AE-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A151CC7CFB400C76EC1 /* ea-duotr5-AE-3.mp3 */; };
+		0E847A1E1CC7CFB400C76EC1 /* ea-duotr6-AE-4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A161CC7CFB400C76EC1 /* ea-duotr6-AE-4.mp3 */; };
+		0E847A1F1CC7CFB400C76EC1 /* ea-duotr7-AE-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A171CC7CFB400C76EC1 /* ea-duotr7-AE-5.mp3 */; };
+		0E847A201CC7CFB400C76EC1 /* ea-duotr8-AE-6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E847A181CC7CFB400C76EC1 /* ea-duotr8-AE-6.mp3 */; };
 		143DB6CE1875FDE5006796A4 /* ea_duotr9_BB6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 143DB6CD1875FDE5006796A4 /* ea_duotr9_BB6.mp3 */; };
 		147B400218525E0000C5980F /* ea_duotr1_PA1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 147B3FFA18525E0000C5980F /* ea_duotr1_PA1.mp3 */; };
 		147B400318525E0000C5980F /* ea_duotr2_PA2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 147B3FFB18525E0000C5980F /* ea_duotr2_PA2.mp3 */; };
@@ -235,6 +243,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E847A111CC7CFB400C76EC1 /* ea-duotr1-AE-P1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr1-AE-P1.mp3"; sourceTree = "<group>"; };
+		0E847A121CC7CFB400C76EC1 /* ea-duotr2-AE-P2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr2-AE-P2.mp3"; sourceTree = "<group>"; };
+		0E847A131CC7CFB400C76EC1 /* ea-duotr3-AE-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr3-AE-1.mp3"; sourceTree = "<group>"; };
+		0E847A141CC7CFB400C76EC1 /* ea-duotr4-AE-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr4-AE-2.mp3"; sourceTree = "<group>"; };
+		0E847A151CC7CFB400C76EC1 /* ea-duotr5-AE-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr5-AE-3.mp3"; sourceTree = "<group>"; };
+		0E847A161CC7CFB400C76EC1 /* ea-duotr6-AE-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr6-AE-4.mp3"; sourceTree = "<group>"; };
+		0E847A171CC7CFB400C76EC1 /* ea-duotr7-AE-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr7-AE-5.mp3"; sourceTree = "<group>"; };
+		0E847A181CC7CFB400C76EC1 /* ea-duotr8-AE-6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr8-AE-6.mp3"; sourceTree = "<group>"; };
 		143DB6CD1875FDE5006796A4 /* ea_duotr9_BB6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr9_BB6.mp3; sourceTree = "<group>"; };
 		147B3FFA18525E0000C5980F /* ea_duotr1_PA1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr1_PA1.mp3; sourceTree = "<group>"; };
 		147B3FFB18525E0000C5980F /* ea_duotr2_PA2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr2_PA2.mp3; sourceTree = "<group>"; };
@@ -515,6 +531,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E847A101CC7CFB400C76EC1 /* 8. Acoustical */ = {
+			isa = PBXGroup;
+			children = (
+				0E847A111CC7CFB400C76EC1 /* ea-duotr1-AE-P1.mp3 */,
+				0E847A121CC7CFB400C76EC1 /* ea-duotr2-AE-P2.mp3 */,
+				0E847A131CC7CFB400C76EC1 /* ea-duotr3-AE-1.mp3 */,
+				0E847A141CC7CFB400C76EC1 /* ea-duotr4-AE-2.mp3 */,
+				0E847A151CC7CFB400C76EC1 /* ea-duotr5-AE-3.mp3 */,
+				0E847A161CC7CFB400C76EC1 /* ea-duotr6-AE-4.mp3 */,
+				0E847A171CC7CFB400C76EC1 /* ea-duotr7-AE-5.mp3 */,
+				0E847A181CC7CFB400C76EC1 /* ea-duotr8-AE-6.mp3 */,
+			);
+			name = "8. Acoustical";
+			path = "eacommunicator/audio files/8. Acoustical";
+			sourceTree = SOURCE_ROOT;
+		};
 		147B3FF918525E0000C5980F /* LO Update Nov 2013 */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,6 +783,7 @@
 		2CE4E373181509BC009F2499 /* Audio Files */ = {
 			isa = PBXGroup;
 			children = (
+				0E847A101CC7CFB400C76EC1 /* 8. Acoustical */,
 				2CE4E374181509BC009F2499 /* 1. Cane Toads */,
 				2CE4E37B181509BC009F2499 /* 2. Bubbles */,
 				2CE4E384181509BC009F2499 /* 3. Packages */,
@@ -999,7 +1032,7 @@
 				ORGANIZATIONNAME = "Museum of Science Boston";
 				TargetAttributes = {
 					2C7543F6174CF06D00B353D0 = {
-						DevelopmentTeam = S6QJ73MBKY;
+						DevelopmentTeam = Z2AY865X4R;
 					};
 				};
 			};
@@ -1031,6 +1064,7 @@
 				2CE4E3DA181509BD009F2499 /* ea_duo_rr_A1_01.mp3 in Resources */,
 				2CE4E3CE181509BD009F2499 /* ea_duotr8_AP5_01.mp3 in Resources */,
 				2CE4E3E2181509BD009F2499 /* ea_duo_rr_PA2_01.mp3 in Resources */,
+				0E847A1A1CC7CFB400C76EC1 /* ea-duotr2-AE-P2.mp3 in Resources */,
 				2CE4E3B9181509BD009F2499 /* ea_duotr1_PA1_01.mp3 in Resources */,
 				2C75444F174CF4F700B353D0 /* bars-vis-1.png in Resources */,
 				2C754450174CF4F700B353D0 /* bars-vis-2.png in Resources */,
@@ -1086,17 +1120,20 @@
 				2CE4E3E9181509BD009F2499 /* ea_duotr07_RR5_01.mp3 in Resources */,
 				2CE4E3BE181509BD009F2499 /* ea_duotr6_TT4_01.mp3 in Resources */,
 				2C754471174CF4F700B353D0 /* scanner-crosshairs-blank.png in Resources */,
+				0E847A1F1CC7CFB400C76EC1 /* ea-duotr7-AE-5.mp3 in Resources */,
 				2C754475174CF4F700B353D0 /* scanner-light-off.png in Resources */,
 				2C754477174CF4F700B353D0 /* track01.png in Resources */,
 				2C754478174CF4F700B353D0 /* track02.png in Resources */,
 				2C75447A174CFAC700B353D0 /* icon01-57x57.png in Resources */,
 				584F5AE81A9BAAB400B59FC3 /* ea_duotr3_EQ1_01_rev2014.mp3 in Resources */,
+				0E847A1E1CC7CFB400C76EC1 /* ea-duotr6-AE-4.mp3 in Resources */,
 				584F5B011A9BB5D000B59FC3 /* bigB.png in Resources */,
 				2C75447C174CFACB00B353D0 /* icon01-114x114.png in Resources */,
 				2CE4E3C0181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
 				2C75448A174D006800B353D0 /* Default@2x.png in Resources */,
 				2CE4E3D2181509BD009F2499 /* ea_duotr3_EQ1_01.mp3 in Resources */,
 				147B400818525E0000C5980F /* ea_duotr7_LO5.mp3 in Resources */,
+				0E847A201CC7CFB400C76EC1 /* ea-duotr8-AE-6.mp3 in Resources */,
 				2C754490174D068F00B353D0 /* Default-568h@2x.png in Resources */,
 				584F5AE91A9BAAB400B59FC3 /* ea_duotr9_EQ7_01_rev2014.mp3 in Resources */,
 				2CE4E3BA181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
@@ -1127,6 +1164,7 @@
 				2C65BE56174E9EE200041E0F /* scanner-light-green.png in Resources */,
 				584F5AF71A9BB58100B59FC3 /* ea_duotr4-SL2.mp3 in Resources */,
 				2CE4E3C5181509BD009F2499 /* ea_duotr7_BB4_01.mp3 in Resources */,
+				0E847A1B1CC7CFB400C76EC1 /* ea-duotr3-AE-1.mp3 in Resources */,
 				2CE4E3C3181509BD009F2499 /* ea_duotr5_BB2_01.mp3 in Resources */,
 				2C65BE57174E9EE200041E0F /* scanner-light-red.png in Resources */,
 				2CE4E3BF181509BD009F2499 /* ea_duotr1_PA1_01.mp3 in Resources */,
@@ -1172,6 +1210,7 @@
 				584F5AF91A9BB58100B59FC3 /* ea_duotr6-SL4.mp3 in Resources */,
 				584F5AE31A9BA31800B59FC3 /* ea_duotr8_AP5_01_rev2014.mp3 in Resources */,
 				2CA8A8C81756B40B0012718E /* small10.png in Resources */,
+				0E847A1D1CC7CFB400C76EC1 /* ea-duotr5-AE-3.mp3 in Resources */,
 				2CA8A8C91756B40B0012718E /* small11.png in Resources */,
 				584F5AF61A9BB58100B59FC3 /* ea_duotr3-SL1.mp3 in Resources */,
 				584F5AFA1A9BB58100B59FC3 /* ea_duotr7-SL5.mp3 in Resources */,
@@ -1201,6 +1240,7 @@
 				2CA8A8D91756B40B0012718E /* track11.png in Resources */,
 				2CA8A8DA1756B40B0012718E /* track12.png in Resources */,
 				2CE4E3C7181509BD009F2499 /* ea_duotr1_PA1_01.mp3 in Resources */,
+				0E847A191CC7CFB400C76EC1 /* ea-duotr1-AE-P1.mp3 in Resources */,
 				2CA8A8DB1756B40B0012718E /* track2.png in Resources */,
 				2CA8A8DC1756B40B0012718E /* track3.png in Resources */,
 				2CA8A8DD1756B40B0012718E /* track4.png in Resources */,
@@ -1219,6 +1259,7 @@
 				2CE4E3C6181509BD009F2499 /* ea_duotr8_BB5_01.mp3 in Resources */,
 				2CE4E3E8181509BD009F2499 /* ea_duotr06_RR4_01.mp3 in Resources */,
 				2CA8A8E71756DBF10012718E /* Adventure.png in Resources */,
+				0E847A1C1CC7CFB400C76EC1 /* ea-duotr4-AE-2.mp3 in Resources */,
 				2C1A37F11762633F00FF55DA /* track1A.png in Resources */,
 				584F5AF81A9BB58100B59FC3 /* ea_duotr5-SL3.mp3 in Resources */,
 				143DB6CE1875FDE5006796A4 /* ea_duotr9_BB6.mp3 in Resources */,
@@ -1287,6 +1328,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1318,6 +1360,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -1332,7 +1375,7 @@
 		2C75441B174CF06D00B353D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EACommunicator/EACommunicator-Prefix.pch";
@@ -1356,7 +1399,7 @@
 		2C75441C174CF06D00B353D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EACommunicator/EACommunicator-Prefix.pch";
