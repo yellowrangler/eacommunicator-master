@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Museum of Science Boston. All rights reserved.
 //
 
+#define kPLAYBACK_USER_DEFAULTS (@"playback_info") //Array of Dictionaries of playback information
+
+
 #import "EACAppDelegate.h"
 #import "EACInstructionViewController.h"
 
@@ -14,6 +17,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Tarry Cutler Added this 05042016 to prevent IOS device from sleeping durring audio playback
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+    
     return YES;
 }
 							
@@ -42,6 +49,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    // Tarry Cutler Added this 05042016 to enable IOS device to resume sleeping
+    
+    [UIApplication sharedApplication].idleTimerDisabled = NO;
 }
 
 @end

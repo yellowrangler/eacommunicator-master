@@ -28,13 +28,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EACommunicator/EACPlaybackViewController.m"
-            timestampString = "482873851.386201"
+            filePath = "EACommunicator/EACAppDelegate.m"
+            timestampString = "484083592.04192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1156"
-            endingLineNumber = "1156"
-            landmarkName = "-reset"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-applicationWillTerminate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
