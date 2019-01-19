@@ -174,10 +174,10 @@ didOutputMetadataObjects:(NSArray *)metadataObjects
 																					[self backButtonTapped];
 																				}];
 										 }];
-		NSLog(@"QR Code that is being used: %@", QRCode);
+		// NSLog(@"QR Code that is being used: %@", QRCode);
 	}
 	
-	NSLog(@"QR Code: %@", QRCode);
+	// NSLog(@"QR Code: %@", QRCode);
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -302,8 +302,8 @@ didOutputMetadataObjects:(NSArray *)metadataObjects
 	NSMutableArray * tempCodes = [[NSMutableArray alloc] init];
 	for (NSDictionary * fileDictionary in [_audioMap allValues])
 	{
-		NSLog(@"class of fileDictionary: %@",[fileDictionary class]);
-		NSLog(@"fileDictionary: %@", fileDictionary);
+		// NSLog(@"class of fileDictionary: %@",[fileDictionary class]);
+		// NSLog(@"fileDictionary: %@", fileDictionary);
     [tempCodes addObject:fileDictionary[EA_URL]];
 	}
 	self.codes = [tempCodes copy];

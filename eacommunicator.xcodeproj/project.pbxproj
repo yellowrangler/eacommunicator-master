@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2CA20F21CED60900D5A3CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2CA20E21CED60900D5A3CC /* Images.xcassets */; };
 		0E6037191CDA741C0057BC4E /* ea-duotr1-AE-P1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E6037111CDA741C0057BC4E /* ea-duotr1-AE-P1.mp3 */; };
 		0E60371A1CDA741C0057BC4E /* ea-duotr2-AE-P2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E6037121CDA741C0057BC4E /* ea-duotr2-AE-P2.mp3 */; };
 		0E60371B1CDA741C0057BC4E /* ea-duotr3-AE-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E6037131CDA741C0057BC4E /* ea-duotr3-AE-1.mp3 */; };
@@ -15,6 +16,36 @@
 		0E60371E1CDA741C0057BC4E /* ea-duotr6-AE-4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E6037161CDA741C0057BC4E /* ea-duotr6-AE-4.mp3 */; };
 		0E60371F1CDA741C0057BC4E /* ea-duotr7-AE-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E6037171CDA741C0057BC4E /* ea-duotr7-AE-5.mp3 */; };
 		0E6037201CDA741C0057BC4E /* ea-duotr8-AE-6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E6037181CDA741C0057BC4E /* ea-duotr8-AE-6.mp3 */; };
+		0E8836B021C01C170006623B /* TRACK-03-SG-A1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836A621C01C150006623B /* TRACK-03-SG-A1.mp3 */; };
+		0E8836B221C01C170006623B /* TRACK-04-SG-A1A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836A821C01C150006623B /* TRACK-04-SG-A1A.mp3 */; };
+		0E8836B321C01C170006623B /* TRACK-07-SG-A4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836A921C01C150006623B /* TRACK-07-SG-A4.mp3 */; };
+		0E8836B421C01C170006623B /* TRACK-06-SG-A3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836AA21C01C160006623B /* TRACK-06-SG-A3.mp3 */; };
+		0E8836B521C01C170006623B /* TRACK-10-SG-A7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836AB21C01C160006623B /* TRACK-10-SG-A7.mp3 */; };
+		0E8836B621C01C170006623B /* TRACK-05-SG-A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836AC21C01C160006623B /* TRACK-05-SG-A2.mp3 */; };
+		0E8836B721C01C170006623B /* TRACK-08-SG-A5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836AD21C01C160006623B /* TRACK-08-SG-A5.mp3 */; };
+		0E8836B821C01C170006623B /* TRACK-02-SG-P2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836AE21C01C160006623B /* TRACK-02-SG-P2.mp3 */; };
+		0E8836B921C01C170006623B /* TRACK-09-SG-A6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8836AF21C01C170006623B /* TRACK-09-SG-A6.mp3 */; };
+		0E91887221E6C6430054C054 /* TRACK-01-SG-P1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E91887121E6C6430054C054 /* TRACK-01-SG-P1.mp3 */; };
+		0EB6D5CA1DC255BD00A27C3C /* TRACK-01-AV-P1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5C21DC255BD00A27C3C /* TRACK-01-AV-P1.mp3 */; };
+		0EB6D5CC1DC255BD00A27C3C /* TRACK-03-AV-A1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5C41DC255BD00A27C3C /* TRACK-03-AV-A1.mp3 */; };
+		0EB6D5CD1DC255BD00A27C3C /* TRACK-04-AV-A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5C51DC255BD00A27C3C /* TRACK-04-AV-A2.mp3 */; };
+		0EB6D5CE1DC255BD00A27C3C /* TRACK-05-AV-A3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5C61DC255BD00A27C3C /* TRACK-05-AV-A3.mp3 */; };
+		0EB6D5CF1DC255BD00A27C3C /* TRACK-06-AV-A4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5C71DC255BD00A27C3C /* TRACK-06-AV-A4.mp3 */; };
+		0EB6D5D01DC255BD00A27C3C /* TRACK-07-AV-A5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5C81DC255BD00A27C3C /* TRACK-07-AV-A5.mp3 */; };
+		0EB6D5D11DC255BD00A27C3C /* TRACK-08-AV-A6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5C91DC255BD00A27C3C /* TRACK-08-AV-A6.mp3 */; };
+		0EB6D5DF1DC2562800A27C3C /* TRACK-01-NL-P1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5D31DC2562800A27C3C /* TRACK-01-NL-P1.mp3 */; };
+		0EB6D5E01DC2562800A27C3C /* TRACK-02-NL-P2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5D41DC2562800A27C3C /* TRACK-02-NL-P2.mp3 */; };
+		0EB6D5E11DC2562800A27C3C /* TRACK-03-NL-A1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5D51DC2562800A27C3C /* TRACK-03-NL-A1.mp3 */; };
+		0EB6D5E21DC2562800A27C3C /* TRACK-04-NL-A2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5D61DC2562800A27C3C /* TRACK-04-NL-A2.mp3 */; };
+		0EB6D5E31DC2562800A27C3C /* TRACK-05-NL-A3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5D71DC2562800A27C3C /* TRACK-05-NL-A3.mp3 */; };
+		0EB6D5E41DC2562800A27C3C /* TRACK-06-NL-A4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5D81DC2562800A27C3C /* TRACK-06-NL-A4.mp3 */; };
+		0EB6D5E51DC2562800A27C3C /* TRACK-07-NL-A4A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5D91DC2562800A27C3C /* TRACK-07-NL-A4A.mp3 */; };
+		0EB6D5E61DC2562800A27C3C /* TRACK-08-NL-A5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5DA1DC2562800A27C3C /* TRACK-08-NL-A5.mp3 */; };
+		0EB6D5E71DC2562800A27C3C /* TRACK-09-NL-A6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5DB1DC2562800A27C3C /* TRACK-09-NL-A6.mp3 */; };
+		0EB6D5E81DC2562800A27C3C /* TRACK-10-NL-A7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5DC1DC2562800A27C3C /* TRACK-10-NL-A7.mp3 */; };
+		0EB6D5E91DC2562800A27C3C /* TRACK_05_NL_A3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5DD1DC2562800A27C3C /* TRACK_05_NL_A3.mp3 */; };
+		0EB6D5EA1DC2562800A27C3C /* TRACK_08_NL_A5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EB6D5DE1DC2562800A27C3C /* TRACK_08_NL_A5.mp3 */; };
+		0EC873101DC28A9C00A34D57 /* TRACK-02-AV-P2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EC8730F1DC28A9C00A34D57 /* TRACK-02-AV-P2.mp3 */; };
 		143DB6CE1875FDE5006796A4 /* ea_duotr9_BB6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 143DB6CD1875FDE5006796A4 /* ea_duotr9_BB6.mp3 */; };
 		147B400218525E0000C5980F /* ea_duotr1_PA1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 147B3FFA18525E0000C5980F /* ea_duotr1_PA1.mp3 */; };
 		147B400318525E0000C5980F /* ea_duotr2_PA2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 147B3FFB18525E0000C5980F /* ea_duotr2_PA2.mp3 */; };
@@ -243,6 +274,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2CA20E21CED60900D5A3CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0E6037111CDA741C0057BC4E /* ea-duotr1-AE-P1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr1-AE-P1.mp3"; sourceTree = "<group>"; };
 		0E6037121CDA741C0057BC4E /* ea-duotr2-AE-P2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr2-AE-P2.mp3"; sourceTree = "<group>"; };
 		0E6037131CDA741C0057BC4E /* ea-duotr3-AE-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr3-AE-1.mp3"; sourceTree = "<group>"; };
@@ -251,6 +283,36 @@
 		0E6037161CDA741C0057BC4E /* ea-duotr6-AE-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr6-AE-4.mp3"; sourceTree = "<group>"; };
 		0E6037171CDA741C0057BC4E /* ea-duotr7-AE-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr7-AE-5.mp3"; sourceTree = "<group>"; };
 		0E6037181CDA741C0057BC4E /* ea-duotr8-AE-6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ea-duotr8-AE-6.mp3"; sourceTree = "<group>"; };
+		0E8836A621C01C150006623B /* TRACK-03-SG-A1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-03-SG-A1.mp3"; sourceTree = "<group>"; };
+		0E8836A821C01C150006623B /* TRACK-04-SG-A1A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-04-SG-A1A.mp3"; sourceTree = "<group>"; };
+		0E8836A921C01C150006623B /* TRACK-07-SG-A4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-07-SG-A4.mp3"; sourceTree = "<group>"; };
+		0E8836AA21C01C160006623B /* TRACK-06-SG-A3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-06-SG-A3.mp3"; sourceTree = "<group>"; };
+		0E8836AB21C01C160006623B /* TRACK-10-SG-A7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-10-SG-A7.mp3"; sourceTree = "<group>"; };
+		0E8836AC21C01C160006623B /* TRACK-05-SG-A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-05-SG-A2.mp3"; sourceTree = "<group>"; };
+		0E8836AD21C01C160006623B /* TRACK-08-SG-A5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-08-SG-A5.mp3"; sourceTree = "<group>"; };
+		0E8836AE21C01C160006623B /* TRACK-02-SG-P2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-02-SG-P2.mp3"; sourceTree = "<group>"; };
+		0E8836AF21C01C170006623B /* TRACK-09-SG-A6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-09-SG-A6.mp3"; sourceTree = "<group>"; };
+		0E91887121E6C6430054C054 /* TRACK-01-SG-P1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-01-SG-P1.mp3"; sourceTree = "<group>"; };
+		0EB6D5C21DC255BD00A27C3C /* TRACK-01-AV-P1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-01-AV-P1.mp3"; sourceTree = "<group>"; };
+		0EB6D5C41DC255BD00A27C3C /* TRACK-03-AV-A1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-03-AV-A1.mp3"; sourceTree = "<group>"; };
+		0EB6D5C51DC255BD00A27C3C /* TRACK-04-AV-A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-04-AV-A2.mp3"; sourceTree = "<group>"; };
+		0EB6D5C61DC255BD00A27C3C /* TRACK-05-AV-A3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-05-AV-A3.mp3"; sourceTree = "<group>"; };
+		0EB6D5C71DC255BD00A27C3C /* TRACK-06-AV-A4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-06-AV-A4.mp3"; sourceTree = "<group>"; };
+		0EB6D5C81DC255BD00A27C3C /* TRACK-07-AV-A5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-07-AV-A5.mp3"; sourceTree = "<group>"; };
+		0EB6D5C91DC255BD00A27C3C /* TRACK-08-AV-A6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-08-AV-A6.mp3"; sourceTree = "<group>"; };
+		0EB6D5D31DC2562800A27C3C /* TRACK-01-NL-P1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-01-NL-P1.mp3"; sourceTree = "<group>"; };
+		0EB6D5D41DC2562800A27C3C /* TRACK-02-NL-P2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-02-NL-P2.mp3"; sourceTree = "<group>"; };
+		0EB6D5D51DC2562800A27C3C /* TRACK-03-NL-A1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-03-NL-A1.mp3"; sourceTree = "<group>"; };
+		0EB6D5D61DC2562800A27C3C /* TRACK-04-NL-A2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-04-NL-A2.mp3"; sourceTree = "<group>"; };
+		0EB6D5D71DC2562800A27C3C /* TRACK-05-NL-A3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-05-NL-A3.mp3"; sourceTree = "<group>"; };
+		0EB6D5D81DC2562800A27C3C /* TRACK-06-NL-A4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-06-NL-A4.mp3"; sourceTree = "<group>"; };
+		0EB6D5D91DC2562800A27C3C /* TRACK-07-NL-A4A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-07-NL-A4A.mp3"; sourceTree = "<group>"; };
+		0EB6D5DA1DC2562800A27C3C /* TRACK-08-NL-A5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-08-NL-A5.mp3"; sourceTree = "<group>"; };
+		0EB6D5DB1DC2562800A27C3C /* TRACK-09-NL-A6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-09-NL-A6.mp3"; sourceTree = "<group>"; };
+		0EB6D5DC1DC2562800A27C3C /* TRACK-10-NL-A7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-10-NL-A7.mp3"; sourceTree = "<group>"; };
+		0EB6D5DD1DC2562800A27C3C /* TRACK_05_NL_A3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TRACK_05_NL_A3.mp3; sourceTree = "<group>"; };
+		0EB6D5DE1DC2562800A27C3C /* TRACK_08_NL_A5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TRACK_08_NL_A5.mp3; sourceTree = "<group>"; };
+		0EC8730F1DC28A9C00A34D57 /* TRACK-02-AV-P2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TRACK-02-AV-P2.mp3"; sourceTree = "<group>"; };
 		143DB6CD1875FDE5006796A4 /* ea_duotr9_BB6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr9_BB6.mp3; sourceTree = "<group>"; };
 		147B3FFA18525E0000C5980F /* ea_duotr1_PA1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr1_PA1.mp3; sourceTree = "<group>"; };
 		147B3FFB18525E0000C5980F /* ea_duotr2_PA2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ea_duotr2_PA2.mp3; sourceTree = "<group>"; };
@@ -547,6 +609,58 @@
 			path = "eacommunicator/audio files/8. Acoustical";
 			sourceTree = SOURCE_ROOT;
 		};
+		0E8836BA21C01C3D0006623B /* 11. Space Gloves */ = {
+			isa = PBXGroup;
+			children = (
+				0E8836AB21C01C160006623B /* TRACK-10-SG-A7.mp3 */,
+				0E8836AD21C01C160006623B /* TRACK-08-SG-A5.mp3 */,
+				0E8836AF21C01C170006623B /* TRACK-09-SG-A6.mp3 */,
+				0E8836A921C01C150006623B /* TRACK-07-SG-A4.mp3 */,
+				0E8836AA21C01C160006623B /* TRACK-06-SG-A3.mp3 */,
+				0E8836AC21C01C160006623B /* TRACK-05-SG-A2.mp3 */,
+				0E8836A821C01C150006623B /* TRACK-04-SG-A1A.mp3 */,
+				0E8836A621C01C150006623B /* TRACK-03-SG-A1.mp3 */,
+				0E8836AE21C01C160006623B /* TRACK-02-SG-P2.mp3 */,
+				0E91887121E6C6430054C054 /* TRACK-01-SG-P1.mp3 */,
+			);
+			name = "11. Space Gloves";
+			path = "eacommunicator/audio files/11. Space Gloves";
+			sourceTree = SOURCE_ROOT;
+		};
+		0EB6D5C11DC255BD00A27C3C /* 9. Avalanche */ = {
+			isa = PBXGroup;
+			children = (
+				0EC8730F1DC28A9C00A34D57 /* TRACK-02-AV-P2.mp3 */,
+				0EB6D5C21DC255BD00A27C3C /* TRACK-01-AV-P1.mp3 */,
+				0EB6D5C41DC255BD00A27C3C /* TRACK-03-AV-A1.mp3 */,
+				0EB6D5C51DC255BD00A27C3C /* TRACK-04-AV-A2.mp3 */,
+				0EB6D5C61DC255BD00A27C3C /* TRACK-05-AV-A3.mp3 */,
+				0EB6D5C71DC255BD00A27C3C /* TRACK-06-AV-A4.mp3 */,
+				0EB6D5C81DC255BD00A27C3C /* TRACK-07-AV-A5.mp3 */,
+				0EB6D5C91DC255BD00A27C3C /* TRACK-08-AV-A6.mp3 */,
+			);
+			path = "9. Avalanche";
+			sourceTree = "<group>";
+		};
+		0EB6D5D21DC2562800A27C3C /* 10. Northern Lights */ = {
+			isa = PBXGroup;
+			children = (
+				0EB6D5D31DC2562800A27C3C /* TRACK-01-NL-P1.mp3 */,
+				0EB6D5D41DC2562800A27C3C /* TRACK-02-NL-P2.mp3 */,
+				0EB6D5D51DC2562800A27C3C /* TRACK-03-NL-A1.mp3 */,
+				0EB6D5D61DC2562800A27C3C /* TRACK-04-NL-A2.mp3 */,
+				0EB6D5D71DC2562800A27C3C /* TRACK-05-NL-A3.mp3 */,
+				0EB6D5D81DC2562800A27C3C /* TRACK-06-NL-A4.mp3 */,
+				0EB6D5D91DC2562800A27C3C /* TRACK-07-NL-A4A.mp3 */,
+				0EB6D5DA1DC2562800A27C3C /* TRACK-08-NL-A5.mp3 */,
+				0EB6D5DB1DC2562800A27C3C /* TRACK-09-NL-A6.mp3 */,
+				0EB6D5DC1DC2562800A27C3C /* TRACK-10-NL-A7.mp3 */,
+				0EB6D5DD1DC2562800A27C3C /* TRACK_05_NL_A3.mp3 */,
+				0EB6D5DE1DC2562800A27C3C /* TRACK_08_NL_A5.mp3 */,
+			);
+			path = "10. Northern Lights";
+			sourceTree = "<group>";
+		};
 		147B3FF918525E0000C5980F /* LO Update Nov 2013 */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,6 +736,7 @@
 				2C754420174CF39800B353D0 /* custom ViewControllers */,
 				2C52198E175015A200C2BF8A /* other custom subclasses */,
 				2C754424174CF49300B353D0 /* Images */,
+				0E2CA20E21CED60900D5A3CC /* Images.xcassets */,
 				2C754401174CF06D00B353D0 /* Supporting Files */,
 			);
 			path = EACommunicator;
@@ -783,6 +898,9 @@
 		2CE4E373181509BC009F2499 /* Audio Files */ = {
 			isa = PBXGroup;
 			children = (
+				0E8836BA21C01C3D0006623B /* 11. Space Gloves */,
+				0EB6D5D21DC2562800A27C3C /* 10. Northern Lights */,
+				0EB6D5C11DC255BD00A27C3C /* 9. Avalanche */,
 				0E847A101CC7CFB400C76EC1 /* 8. Acoustical */,
 				2CE4E374181509BC009F2499 /* 1. Cane Toads */,
 				2CE4E37B181509BC009F2499 /* 2. Bubbles */,
@@ -1033,6 +1151,11 @@
 				TargetAttributes = {
 					2C7543F6174CF06D00B353D0 = {
 						DevelopmentTeam = Z2AY865X4R;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1058,13 +1181,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB6D5CE1DC255BD00A27C3C /* TRACK-05-AV-A3.mp3 in Resources */,
 				2C754405174CF06D00B353D0 /* InfoPlist.strings in Resources */,
 				2CE4E3EE181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
 				2C754414174CF06D00B353D0 /* MainStoryboard.storyboard in Resources */,
 				2CE4E3DA181509BD009F2499 /* ea_duo_rr_A1_01.mp3 in Resources */,
 				2CE4E3CE181509BD009F2499 /* ea_duotr8_AP5_01.mp3 in Resources */,
+				0E8836B021C01C170006623B /* TRACK-03-SG-A1.mp3 in Resources */,
+				0EB6D5CC1DC255BD00A27C3C /* TRACK-03-AV-A1.mp3 in Resources */,
 				2CE4E3E2181509BD009F2499 /* ea_duo_rr_PA2_01.mp3 in Resources */,
 				0E60371A1CDA741C0057BC4E /* ea-duotr2-AE-P2.mp3 in Resources */,
+				0EB6D5E21DC2562800A27C3C /* TRACK-04-NL-A2.mp3 in Resources */,
+				0EB6D5E71DC2562800A27C3C /* TRACK-09-NL-A6.mp3 in Resources */,
 				2CE4E3B9181509BD009F2499 /* ea_duotr1_PA1_01.mp3 in Resources */,
 				2C75444F174CF4F700B353D0 /* bars-vis-1.png in Resources */,
 				2C754450174CF4F700B353D0 /* bars-vis-2.png in Resources */,
@@ -1085,11 +1213,14 @@
 				2C754459174CF4F700B353D0 /* concentricvis3.png in Resources */,
 				5823400F1B82316300C123B2 /* bigB.png in Resources */,
 				2CE4E3DD181509BD009F2499 /* ea_duo_rr_A4_01.mp3 in Resources */,
+				0EB6D5E91DC2562800A27C3C /* TRACK_05_NL_A3.mp3 in Resources */,
 				2CE4E3E7181509BD009F2499 /* ea_duotr05_RR3_01.mp3 in Resources */,
 				2CE4E3CC181509BD009F2499 /* ea_duotr6_AP3_01.mp3 in Resources */,
 				2C75445A174CF4F700B353D0 /* concentricvis4.png in Resources */,
+				0E8836B621C01C170006623B /* TRACK-05-SG-A2.mp3 in Resources */,
 				2CE4E3C2181509BD009F2499 /* ea_duotr4_BB1a_01.mp3 in Resources */,
 				2CE4E3DC181509BD009F2499 /* ea_duo_rr_A3_01.mp3 in Resources */,
+				0EB6D5E11DC2562800A27C3C /* TRACK-03-NL-A1.mp3 in Resources */,
 				2CE4E3D5181509BD009F2499 /* ea_duotr6_EQ4_01.mp3 in Resources */,
 				2CE4E3E5181509BD009F2499 /* ea_duotr03_RR1_01.mp3 in Resources */,
 				2CE4E3F0181509BD009F2499 /* ea_duotr3_LO1_02.mp3 in Resources */,
@@ -1098,9 +1229,13 @@
 				2C75445C174CF4F700B353D0 /* concentricvis6.png in Resources */,
 				2C75445D174CF4F700B353D0 /* elapsed0.png in Resources */,
 				5897E73D1A8EAC1A00C91EF7 /* zbar-helpicons.png in Resources */,
+				0EB6D5E51DC2562800A27C3C /* TRACK-07-NL-A4A.mp3 in Resources */,
 				2C75445E174CF4F700B353D0 /* elapsed1.png in Resources */,
 				2C75445F174CF4F700B353D0 /* elapsed2.png in Resources */,
+				0E2CA20F21CED60900D5A3CC /* Images.xcassets in Resources */,
 				2CE4E3D7181509BD009F2499 /* ea_duotr8_EQ6_01.mp3 in Resources */,
+				0EB6D5CA1DC255BD00A27C3C /* TRACK-01-AV-P1.mp3 in Resources */,
+				0EB6D5DF1DC2562800A27C3C /* TRACK-01-NL-P1.mp3 in Resources */,
 				2C754460174CF4F700B353D0 /* elapsed3.png in Resources */,
 				2C754461174CF4F700B353D0 /* elapsed4.png in Resources */,
 				2C754462174CF4F700B353D0 /* elapsed5.png in Resources */,
@@ -1112,6 +1247,7 @@
 				2C754466174CF4F700B353D0 /* main screen.png in Resources */,
 				2C754467174CF4F700B353D0 /* main screen@2x.png in Resources */,
 				2C754468174CF4F700B353D0 /* main screen-tall@2x.png in Resources */,
+				0EB6D5E31DC2562800A27C3C /* TRACK-05-NL-A3.mp3 in Resources */,
 				2C754469174CF4F700B353D0 /* main screen ORIG.tif in Resources */,
 				2C75446E174CF4F700B353D0 /* scanner screen@2x.png in Resources */,
 				2CE4E3F5181509BD009F2499 /* ea_duotr8_LO6_01.mp3 in Resources */,
@@ -1124,6 +1260,7 @@
 				2C754475174CF4F700B353D0 /* scanner-light-off.png in Resources */,
 				2C754477174CF4F700B353D0 /* track01.png in Resources */,
 				2C754478174CF4F700B353D0 /* track02.png in Resources */,
+				0E8836B821C01C170006623B /* TRACK-02-SG-P2.mp3 in Resources */,
 				2C75447A174CFAC700B353D0 /* icon01-57x57.png in Resources */,
 				584F5AE81A9BAAB400B59FC3 /* ea_duotr3_EQ1_01_rev2014.mp3 in Resources */,
 				0E60371E1CDA741C0057BC4E /* ea-duotr6-AE-4.mp3 in Resources */,
@@ -1134,6 +1271,7 @@
 				2CE4E3D2181509BD009F2499 /* ea_duotr3_EQ1_01.mp3 in Resources */,
 				147B400818525E0000C5980F /* ea_duotr7_LO5.mp3 in Resources */,
 				0E6037201CDA741C0057BC4E /* ea-duotr8-AE-6.mp3 in Resources */,
+				0EB6D5D01DC255BD00A27C3C /* TRACK-07-AV-A5.mp3 in Resources */,
 				2C754490174D068F00B353D0 /* Default-568h@2x.png in Resources */,
 				584F5AE91A9BAAB400B59FC3 /* ea_duotr9_EQ7_01_rev2014.mp3 in Resources */,
 				2CE4E3BA181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
@@ -1141,7 +1279,9 @@
 				2CE4E3D6181509BD009F2499 /* ea_duotr7_EQ5_01.mp3 in Resources */,
 				2CE4E3F2181509BD009F2499 /* ea_duotr5_LO3_01.mp3 in Resources */,
 				2C71268E174E66AA008788AB /* EACommunicatorAudioDataModel.csv in Resources */,
+				0E8836B521C01C170006623B /* TRACK-10-SG-A7.mp3 in Resources */,
 				2CE4E3DE181509BD009F2499 /* ea_duo_rr_A4a_01.mp3 in Resources */,
+				0EC873101DC28A9C00A34D57 /* TRACK-02-AV-P2.mp3 in Resources */,
 				2C65BE49174E9EE200041E0F /* instructional cards 1.png in Resources */,
 				2CE4E3D1181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
 				2C65BE4A174E9EE200041E0F /* instructional cards 1@2x.png in Resources */,
@@ -1151,6 +1291,7 @@
 				2C65BE4E174E9EE200041E0F /* instructional cards 3@2x.png in Resources */,
 				2C65BE4F174E9EE200041E0F /* play-pause-off.png in Resources */,
 				2CE4E3EC181509BD009F2499 /* ea_duotr10_RR7_01.mp3 in Resources */,
+				0E8836B721C01C170006623B /* TRACK-08-SG-A5.mp3 in Resources */,
 				2CE4E3CA181509BD009F2499 /* ea_duotr4_AP2_01.mp3 in Resources */,
 				2C65BE50174E9EE200041E0F /* play-pause-on.png in Resources */,
 				2CE4E3CD181509BD009F2499 /* ea_duotr7_AP4_01.mp3 in Resources */,
@@ -1168,14 +1309,17 @@
 				2CE4E3C3181509BD009F2499 /* ea_duotr5_BB2_01.mp3 in Resources */,
 				2C65BE57174E9EE200041E0F /* scanner-light-red.png in Resources */,
 				2CE4E3BF181509BD009F2499 /* ea_duotr1_PA1_01.mp3 in Resources */,
+				0EB6D5CD1DC255BD00A27C3C /* TRACK-04-AV-A2.mp3 in Resources */,
 				2C52198D1750136000C2BF8A /* bars-vis-0.png in Resources */,
 				2CE4E3ED181509BD009F2499 /* ea_duotr1_PA1_02.mp3 in Resources */,
 				2CE4E3C8181509BD009F2499 /* ea_duotr2_PA2_01.mp3 in Resources */,
 				584F5AFB1A9BB58100B59FC3 /* ea_duotr7b-SL5b.mp3 in Resources */,
 				2CE4E3CF181509BD009F2499 /* ea_duotr9_AP6_01.mp3 in Resources */,
 				2C52199417504D8300C2BF8A /* roundPlayButton.png in Resources */,
+				0E8836B921C01C170006623B /* TRACK-09-SG-A6.mp3 in Resources */,
 				147B400418525E0000C5980F /* ea_duotr3_LO1.mp3 in Resources */,
 				2C52199D1750596A00C2BF8A /* normalPlayPause.png in Resources */,
+				0EB6D5D11DC255BD00A27C3C /* TRACK-08-AV-A6.mp3 in Resources */,
 				2CA3BC0B180379FE00F6E640 /* Communicator_iOS7_icon.png in Resources */,
 				2CE4E3C4181509BD009F2499 /* ea_duotr6_BB3_01.mp3 in Resources */,
 				2CA8A8B41756B40B0012718E /* big0.png in Resources */,
@@ -1184,12 +1328,14 @@
 				2CE4E3E1181509BD009F2499 /* ea_duo_rr_PA1_01.mp3 in Resources */,
 				2CA8A8B61756B40B0012718E /* big2.png in Resources */,
 				2CE4E3D3181509BD009F2499 /* ea_duotr4_EQ2_01.mp3 in Resources */,
+				0EB6D5EA1DC2562800A27C3C /* TRACK_08_NL_A5.mp3 in Resources */,
 				584F5AF51A9BB58100B59FC3 /* ea_duotr2-PA2-SL.mp3 in Resources */,
 				2CA8A8B71756B40B0012718E /* big3.png in Resources */,
 				2CA8A8B81756B40B0012718E /* big4.png in Resources */,
 				5897E73B1A8EAC1A00C91EF7 /* zbar-back.png in Resources */,
 				2CA8A8B91756B40B0012718E /* big5.png in Resources */,
 				2CE4E3C1181509BD009F2499 /* ea_duotr3_BB1_01.mp3 in Resources */,
+				0E8836B321C01C170006623B /* TRACK-07-SG-A4.mp3 in Resources */,
 				2CA8A8BA1756B40B0012718E /* big6.png in Resources */,
 				2CE4E3D0181509BD009F2499 /* ea_duotr1_PA1_02.mp3 in Resources */,
 				2CA8A8BB1756B40B0012718E /* big7.png in Resources */,
@@ -1204,6 +1350,7 @@
 				2CA8A8C11756B40B0012718E /* dotfull.png in Resources */,
 				2CA8A8C31756B40B0012718E /* nowplaying.png in Resources */,
 				2CA8A8C41756B40B0012718E /* of.png in Resources */,
+				0E91887221E6C6430054C054 /* TRACK-01-SG-P1.mp3 in Resources */,
 				2CA8A8C51756B40B0012718E /* prepadventure.png in Resources */,
 				2CA8A8C61756B40B0012718E /* small0.png in Resources */,
 				2CA8A8C71756B40B0012718E /* small1.png in Resources */,
@@ -1219,7 +1366,9 @@
 				2CE4E3CB181509BD009F2499 /* ea_duotr5_AP2a_01.mp3 in Resources */,
 				2CA8A8CC1756B40B0012718E /* small3.png in Resources */,
 				2CE4E3EB181509BD009F2499 /* ea_duotr09_RR6a_01.mp3 in Resources */,
+				0E8836B421C01C170006623B /* TRACK-06-SG-A3.mp3 in Resources */,
 				584F5AE51A9BA7D700B59FC3 /* ea_duotr5_BB2_01_rev2014.mp3 in Resources */,
+				0EB6D5E01DC2562800A27C3C /* TRACK-02-NL-P2.mp3 in Resources */,
 				2CA8A8CD1756B40B0012718E /* small4.png in Resources */,
 				2CA8A8CE1756B40B0012718E /* small5.png in Resources */,
 				2CA8A8CF1756B40B0012718E /* small6.png in Resources */,
@@ -1235,6 +1384,7 @@
 				2CE4E3BB181509BD009F2499 /* ea_duotr3_TT1.mp3 in Resources */,
 				2CA8A8D51756B40B0012718E /* smallP3.png in Resources */,
 				2CA8A8D71756B40B0012718E /* track1.png in Resources */,
+				0EB6D5E81DC2562800A27C3C /* TRACK-10-NL-A7.mp3 in Resources */,
 				2CA8A8D81756B40B0012718E /* track10.png in Resources */,
 				147B400918525E0000C5980F /* ea_duotr8_LO6.mp3 in Resources */,
 				2CA8A8D91756B40B0012718E /* track11.png in Resources */,
@@ -1247,12 +1397,14 @@
 				2CA8A8DE1756B40B0012718E /* track5.png in Resources */,
 				2CA8A8DF1756B40B0012718E /* track6.png in Resources */,
 				2CA8A8E01756B40B0012718E /* track7.png in Resources */,
+				0EB6D5CF1DC255BD00A27C3C /* TRACK-06-AV-A4.mp3 in Resources */,
 				2CA8A8E11756B40B0012718E /* track8.png in Resources */,
 				147B400318525E0000C5980F /* ea_duotr2_PA2.mp3 in Resources */,
 				2CA8A8E21756B40B0012718E /* track9.png in Resources */,
 				2CE4E3D9181509BD009F2499 /* ea_duotr9_EQ7_01.mp3 in Resources */,
 				2CA8A8E31756B40B0012718E /* trackP1.png in Resources */,
 				2CA8A8E41756B40B0012718E /* trackP2.png in Resources */,
+				0E8836B221C01C170006623B /* TRACK-04-SG-A1A.mp3 in Resources */,
 				147B400218525E0000C5980F /* ea_duotr1_PA1.mp3 in Resources */,
 				2CA8A8E51756B40B0012718E /* trackP3.png in Resources */,
 				147B400618525E0000C5980F /* ea_duotr5_LO3.mp3 in Resources */,
@@ -1262,6 +1414,8 @@
 				0E60371C1CDA741C0057BC4E /* ea-duotr4-AE-2.mp3 in Resources */,
 				2C1A37F11762633F00FF55DA /* track1A.png in Resources */,
 				584F5AF81A9BB58100B59FC3 /* ea_duotr5-SL3.mp3 in Resources */,
+				0EB6D5E61DC2562800A27C3C /* TRACK-08-NL-A5.mp3 in Resources */,
+				0EB6D5E41DC2562800A27C3C /* TRACK-06-NL-A4.mp3 in Resources */,
 				143DB6CE1875FDE5006796A4 /* ea_duotr9_BB6.mp3 in Resources */,
 				2C1A37F21762633F00FF55DA /* track2A.png in Resources */,
 				584F5AF41A9BB58100B59FC3 /* ea_duotr1-PA1-SL.mp3 in Resources */,
@@ -1326,7 +1480,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1340,9 +1495,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "89737d7c-c348-433f-b9df-ddb1731a2e22";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1359,16 +1514,17 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "89737d7c-c348-433f-b9df-ddb1731a2e22";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1377,12 +1533,16 @@
 		2C75441B174CF06D00B353D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z2AY865X4R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EACommunicator/EACommunicator-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "EACommunicator/EACommunicator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1391,7 +1551,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ac953a67-01e7-4804-828e-307cd468f048";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
@@ -1401,12 +1561,16 @@
 		2C75441C174CF06D00B353D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Museum of Science (Z2AY865X4R)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z2AY865X4R;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EACommunicator/EACommunicator-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "EACommunicator/EACommunicator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1415,7 +1579,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ac953a67-01e7-4804-828e-307cd468f048";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;

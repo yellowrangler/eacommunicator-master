@@ -178,19 +178,34 @@
 
 -(void) loadAudioCSV
 {
+    // Tarry Cutler Added this 01052019 to set audio session category to prevent ringer mute from silencing audio
+    NSError *categoryError = nil;
+    BOOL success = [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&categoryError];
+    
+    if (!success)
+    {
+        NSLog(@"AppDelegate Debug - Error setting AVAudioSession category.  Because of this, there may be no sound. `%@`", categoryError);
+    }
+    
 	NSString* pathT = [[NSBundle mainBundle] pathForResource:@"EACommunicatorAudioDataModel"
 																										ofType:@"csv"];
 	NSString* contentT = [NSString stringWithContentsOfFile:pathT
 																								 encoding:NSUTF8StringEncoding
 																										error:NULL];
-	NSArray * preScannedAudioMappings = [contentT componentsSeparatedByString:@"\r"];
+	NSArray * preScannedAudioMappings = [contentT componentsSeparatedByString:@"\n"];
 	
 	NSMutableDictionary * tempAudioMap = [[NSMutableDictionary alloc] init];
 	for (NSString* audioMap in preScannedAudioMappings)
 	{
 		NSArray * audioFileInformation = [audioMap componentsSeparatedByString:@","];
-//		NSLog(@"%@", audioFileInformation);
-		if ([audioFileInformation[0] isEqualToString:@"Audio_File_Name"]) continue;
+		// NSLog(@"%@", audioFileInformation);
+        
+        //
+        // TC 12112018 - check if have last record which comes through as NULL but does not get taged as such
+        //
+        if  ([audioFileInformation count] < 3) continue;
+        
+        if ([audioFileInformation[0] isEqualToString:@"Audio File Name"]) continue;
 		
 		//build the audio file dictionary from the CSV that correspond to the metadata of the audio files
 		NSDictionary * audioFileDictionary = @{EA_AUDIO_FILE_NAME : audioFileInformation[0],
@@ -203,7 +218,7 @@
 		[tempAudioMap setObject:audioFileDictionary	forKey:audioFileDictionary[EA_URL]];
 	}
 	
-	NSLog(@"temp audio map: %@", tempAudioMap);
+	// NSLog(@"temp audio map: %@", tempAudioMap);
 	
 	self.audioMap = [tempAudioMap copy];
 }
@@ -875,7 +890,8 @@ NSInteger sortTracks(id track1, id track2, void *context)
 	NSDictionary* playbackInfo = [defaults dictionaryForKey:kPLAYBACK_USER_DEFAULTS];
 	
 	if (!playbackInfo)
-	{//No tracks are stored (probably the first time opening the app)
+	{
+        //No tracks are stored (probably the first time opening the app)
 		playbackInfo = self.audioMap;
 	}
 	
@@ -1131,7 +1147,7 @@ NSInteger sortTracks(id track1, id track2, void *context)
 	NSLog(@"audio error: %@", error);
 	[player stop];
 }
-
+    
 #ifdef TESTING_MODE
 
 - (IBAction)testingLongPress:(UILongPressGestureRecognizer *)sender
